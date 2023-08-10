@@ -1,0 +1,146 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(255, 255, 255);
+}
+nav{
+    padding: 20px;
+    background-color: rgb(0, 0, 0);
+    height: 70px;
+}
+nav .logo{
+    color: white;
+    font-size: 30px;
+    font-weight: bolder;
+    float: left;
+}
+nav ul{
+    float: right;
+}
+nav ul li{
+    display: inline-block;
+    text-decoration: none;
+    margin-right: 80px;
+}
+nav ul li a{
+    font-size: 20px;
+    padding: 20px;
+    text-decoration: none;
+    color: white;
+    transition: 2.9s;
+}
+nav ul li a:hover{
+    color: white;
+    text-decoration: underline;
+    border-radius: 50px;
+}
+.box{
+    background-color: whitesmoke ;
+    font-size: 20px;
+    width: 95%;
+    height: 550px;
+    margin-top: 20px;       
+    margin-left: 30px;
+    margin-right: 20px;
+    color: black;
+    text-align: center;
+    
+}
+span{
+    font-size: 45px;
+    font-weight: 500;
+}
+form{
+    max-width: 70rem;
+    margin: 1rem auto;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+.input-box input{
+    width: 30%;
+}
+.input-box input, textarea{
+    margin-bottom: 20px;
+    padding: 8px;
+    border: none;
+    width: 80%;
+    padding-left: 6px;
+    padding-right: 6px;
+    border-radius: 5px;
+}
+.input-box textarea{
+    resize: none;
+}
+button{
+    color: black;
+    background-color: white;
+    padding: 6px;
+    box-shadow: 3px 5px 10px black;
+    border: none;
+    border-radius: 3px;
+    width: 20%;
+}
+button:hover{
+    color: white;
+    background-color: black;
+    cursor: pointer;
+}
+.checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    margin-right: 40px;
+    margin-top: -13px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+@media (max-width: 952px){
+    nav .logo{
+    font-size: 30px;
+    }
+}
+nav ul li a{
+    font-size: 20px;
+}
+@media (max-width: 858px){
+    .checkbtn{
+        display: block;
+        margin-top: 0px;
+    }
+    nav ul{
+        position: fixed;
+        width: 50%;
+        height: 100vh;
+        background-color: rgb(53, 49, 49);
+        top: 68px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+        border-top-right-radius: 10px;
+    }
+   nav ul li{
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 80px;
+   }
+   nav ul li a{
+    text-align: center;
+    font-size: 30px;
+   }
+   #check:checked ~ ul{
+    left: 0px;
+   }
+}
+@media (max-width: 858px){
+.box{
+    margin-left: 20px;
+    width: 400px;
+    
+}
+}
